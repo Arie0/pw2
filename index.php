@@ -14,6 +14,8 @@
     <p>Digite seu idade: <input type="text" name="idade" size="2"></p>
     <p><input type="submit" value="Enviar!" name="enviar"></p>
     </form>
+
+    
 </body>
 
     </html>
