@@ -5,9 +5,14 @@ class Categoria{
     private $id;
     private $nome;
 
-    
+    function __construct (
+        $id
+        $nome,
+    ){
+        $this->nome;
+        $this->id;
+    }
 }
-
     function getId(){
         return $this->id;
     }
