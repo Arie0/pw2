@@ -1,2 +1,2 @@
 # Estoque
-Software para a matéria de Prog Web 2
+Software em PHP para a disciplina de Progamação Web II
