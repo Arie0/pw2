@@ -1,9 +1,7 @@
 <?php
+require_once "Categoria.php";
 
-require_once "Categoria.php"
-
-class Produto{
-
+class Produto {
     private $id;
     private $nome;
     private $descricao;
@@ -11,20 +9,24 @@ class Produto{
     private $preco;
 
     function __construct(
-
-        $id
-        $nome, 
-        $descricao, 
-        Categoria $categoria, 
+        $id,
+        $nome,
+        $descricao,
+        Categoria $categoria,
         $preco,
-        
     ){
-        $this-> id = $id;
-        $this-> nome = $nome;
-        $this-> descricao = $descricao;
-        $this-> categoria = $categoria;
-        $this-> preco = $preco;
-        
+        $this->id = $id;
+        $this->nome = $nome;
+        $this->descricao = $descricao;
+        $this->categoria = $categoria;
+        $this->preco = $preco;
+    }
+
+    function getCategoria(){
+        return $this->categoria;
+    }
+    function setCategoria(Categoria $categoria){
+        $this->categoria = $categoria;
     }
 
     function getId(){
@@ -33,30 +35,26 @@ class Produto{
     function setId($id){
         $this->id = $id;
     }
+
     function getNome(){
         return $this->nome;
     }
     function setNome($nome){
         $this->nome = $nome;
     }
+
     function getDescricao(){
         return $this->descricao;
     }
     function setDescricao($descricao){
         $this->descricao = $descricao;
     }
-    function getCategoria(Categoria $categoria){
-        return $this->categoria;
-    }
-    function setCategoria(Categoria $categoria){
-        $this->categoria = $categoria;
-    }
+
     function getPreco(){
         return $this->preco;
     }
     function setPreco($preco){
         $this->preco = $preco;
     }
-    
-    
+
 }
